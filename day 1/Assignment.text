@@ -1,1 +1,43 @@
 Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+-datatypes used to specify what kind of data stored in the variable.
+
+types of data types:-
+*********************
+1.primitive data types:-
+- they are built-in
+- immutable
+- they can store only a single values
+    -string
+    -number
+    -boolean
+    -undefined
+    -null
+    -symbol
+    -bigint
+
+2.non-primtitive data types:-
+- they are user defined
+- mutable
+- they can store multiple values.
+    -array
+    -functions
+    -objects
+    -math , date , json
+
+Strings:-
+**********
+-sequence of characters enclosed within "" , '' , ``(template literals/backtiks)
+
+number:-
+- -2^53-1 to +2^53-1 upto this range we consider as number data type.
+- beyond this range it will be bigint.
+
+boolean :- true / false.
+
+undefined:- variable is declared but not initialized with the value.
+
+null:-null is empty value / absence of an object.
+- return type of null is "object".
+
+bigint:- any value exceed the range of number dattype we consider that as bigint.
+- any value sufix with "n" will be bigint.
