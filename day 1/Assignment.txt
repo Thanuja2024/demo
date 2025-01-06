@@ -2,7 +2,6 @@ Give me some idea on what is a Data type. What are Primitive Data types and Non-
 -datatypes used to specify what kind of data stored in the variable.
 
 types of data types:-
-*********************
 1.primitive data types:-
 - they are built-in
 - immutable
@@ -25,7 +24,6 @@ types of data types:-
     -math , date , json
 
 Strings:-
-**********
 -sequence of characters enclosed within "" , '' , ``(template literals/backtiks)
 
 number:-
