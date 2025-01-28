@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signin-container {
+            width: 350px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        .signin-container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .signin-container input {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            padding: 10px;
+            font-size: 16px;
+            background: transparent;
+            margin: 10px 0;
+        }
+
+        .signin-container input:focus {
+            outline: none;
+            border-bottom: 2px solid #a18cd1;
+        }
+
+        .signin-container input::placeholder {
+            color: #aaa;
+        }
+
+        .signin-container a {
+            display: block;
+            margin: 10px 0;
+            color: #a18cd1;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .signin-container a:hover {
+            text-decoration: underline;
+        }
+
+        .signin-container button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .signin-container button:hover {
+            opacity: 0.9;
+        }
+
+        .signin-container .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .signin-container .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .signin-container .signup-link {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .signin-container .signup-link a {
+            color: #a18cd1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <a href="#">Forgot password?</a>
+        <button onclick="signin()">SIGN IN</button>
+        <div class="social-icons">
+            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
+            <img src="https://img.icons8.com/color/48/twitter-circled.png" alt="Twitter">
+            <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google">
+        </div>
+        <div class="signup-link">
+            Don't have an account? <a href="#">SIGN UP</a>
+        </div>
+    </div>
+
+    <script>
+        function signin() {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+
+            if (username && email && phone && password) {
+                alert(`Welcome, ${username}!
+Email: ${email}
+Phone: ${phone}`);
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+</body>
+</html>
